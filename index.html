@@ -599,7 +599,7 @@
             updateGroupChart(averageScores);
             
             console.log('提交的答案:', results);
-            alert('提交成功！');
+            alert('Submission Successful！');
             
             return false;
         }
@@ -660,7 +660,7 @@
 
         // 重置当前页面的答案
         function resetPageAnswers(categoryIndex) {
-            if (confirm('确定要重置本页所有答案吗？')) {
+            if (confirm('Reset all answers on this page?')) {
                 // 找到当前页面的所有单选按钮组
                 $(`.form-group[data-category="${categoryIndex}"] input[type="radio"]`).each(function() {
                     // 如果值为1，则选中
